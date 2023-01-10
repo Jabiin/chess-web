@@ -1,0 +1,12 @@
+.pieces-grid{
+    background-color:$font-color-light;
+    grid-area: gal;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    gap: 0.1rem;
+    .col-one{
+        background-color: $font-color-dark;
+    }
+}

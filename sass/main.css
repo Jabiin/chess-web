@@ -1,0 +1,93 @@
+*, ::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header header header header header header" "fig fig fig fig fig fig" "gal gal gal gal gal gal" "footer footer footer footer footer footer";
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  background: linear-gradient(275.12deg, #4B555F 1.91%, #1E1E1F 93.63%);
+  grid-area: header;
+  z-index: 1;
+  position: relative;
+  height: 70vh;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_container img {
+  width: 60rem;
+  position: absolute;
+  left: 34rem;
+  top: 16rem;
+}
+
+.figures {
+  background-color: rgb(232, 234, 233);
+  grid-area: fig;
+  height: 150vh;
+}
+
+.figures_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 120vh;
+  font-size: 4rem;
+}
+.figures_body .text {
+  text-align: center;
+  display: block;
+  line-height: 8rem;
+}
+.figures_body .text span {
+  display: block;
+  font-size: 6rem;
+}
+.figures_body .text p {
+  word-wrap: break-word;
+  line-height: 2.4rem;
+}
+
+.pic_container .pic {
+  width: 80rem;
+}
+
+.pieces-grid {
+  background-color: rgb(232, 234, 233);
+  grid-area: gal;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  height: 80vh;
+  gap: 0.1rem;
+}
+.pieces-grid .col-one {
+  background-color: rgb(41, 41, 41);
+}
+
+footer {
+  background-color: brown;
+  grid-area: footer;
+}/*# sourceMappingURL=main.css.map */
